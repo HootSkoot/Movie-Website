@@ -2,6 +2,8 @@ import webbrowser
 
 #Object for the movies
 class Movie():
+    """This initilzation creates a movie object with four specific data
+    points"""
     def __init__(self, movtitle, movstoryline, movposter, movtrailer):
         self.title = movtitle
         self.storyline = movstoryline
@@ -9,4 +11,5 @@ class Movie():
         self.trailer_youtube_url = movtrailer
 
     def show_trailer(self):
+        """This function displays a youtube video of the trailer"""
         webbrowser.open(self.trailer)
